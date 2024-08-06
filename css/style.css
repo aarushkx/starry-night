@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* cursor: none; */
+}
+
+.scene {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#06070a, #121529, #3b2f4a);
+    overflow: hidden;
+}
+
+.moon {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("../res/images/moon.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 100px white;
+    z-index: 1;
+}
+
+.forest {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transform: scale(1.2);
+}
+
+.stars-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.star {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: glitter 1s infinite linear;
+}
+
+.line {
+    position: absolute;
+    width: 1px;
+    background-color: #ffffff33;
+    animation: glitter 3.8s infinite linear;
+    z-index: 1;
+}
+
+.constellation-star {
+    width: 3.5px;
+    height: 3.5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff;
+    animation: glitter 5s infinite linear;
+}
+
+.star1 {
+    left: 297px;
+    top: 95px;
+}
+.star2 {
+    left: 285px;
+    top: 80px;
+}
+.star3 {
+    left: 250px;
+    top: 100px;
+}
+.star4 {
+    left: 275px;
+    top: 130px;
+}
+.star5 {
+    left: 292px;
+    top: 142px;
+}
+.star6 {
+    left: 307px;
+    top: 186px;
+}
+.star7 {
+    left: 255px;
+    top: 183px;
+}
+.star8 {
+    left: 223px;
+    top: 200px;
+}
+.star9 {
+    left: 240px;
+    top: 155px;
+}
+.line12 {
+    left: 297px;
+    top: 95px;
+    height: 19.2px;
+    transform: rotate(145deg);
+    transform-origin: top left;
+}
+.line23 {
+    left: 285px;
+    top: 80px;
+    height: 40.3px;
+    transform: rotate(55deg);
+    transform-origin: top left;
+}
+.line34 {
+    left: 250px;
+    top: 100px;
+    height: 40.3px;
+    transform: rotate(-41deg);
+    transform-origin: top left;
+}
+.line45 {
+    left: 275px;
+    top: 130px;
+    height: 20.8px;
+    transform: rotate(-52deg);
+    transform-origin: top left;
+}
+.line56 {
+    left: 292px;
+    top: 142px;
+    height: 46.48px;
+    transform: rotate(-20deg);
+    transform-origin: top left;
+}
+.line67 {
+    left: 307px;
+    top: 186px;
+    height: 52px;
+    transform: rotate(92deg);
+    transform-origin: top left;
+}
+.line78 {
+    left: 255px;
+    top: 185px;
+    height: 36.2px;
+    transform: rotate(60deg);
+    transform-origin: top left;
+}
+.line89 {
+    left: 225px;
+    top: 200px;
+    height: 48.1px;
+    transform: rotate(203deg);
+    transform-origin: top left;
+}
+.line94 {
+    left: 245px;
+    top: 155px;
+    height: 35.7px;
+    transform: rotate(235deg);
+    transform-origin: top left;
+}
+
+.star10 {
+    left: 750px;
+    top: 150px;
+}
+.star11 {
+    left: 720px;
+    top: 180px;
+}
+.star12 {
+    left: 727px;
+    top: 220px;
+}
+.star13 {
+    left: 770px;
+    top: 170px;
+}
+.star14 {
+    left: 690px;
+    top: 260px;
+}
+.star15 {
+    left: 670px;
+    top: 240px;
+}
+.line1011 {
+    left: 750px;
+    top: 150px;
+    height: 42.4px;
+    transform: rotate(42deg);
+    transform-origin: top left;
+}
+.line1112 {
+    left: 720px;
+    top: 180px;
+    height: 42.4px;
+    transform: rotate(-12deg);
+    transform-origin: top left;
+}
+.line1213 {
+    left: 727px;
+    top: 225px;
+    height: 65.9px;
+    transform: rotate(220deg);
+    transform-origin: top left;
+}
+.line1214 {
+    left: 730px;
+    top: 220px;
+    height: 54.5px;
+    transform: rotate(-318deg);
+    transform-origin: top left;
+}
+.line1415 {
+    left: 690px;
+    top: 260px;
+    height: 28.2px;
+    transform: rotate(140deg);
+    transform-origin: top left;
+}
+
+@media only screen and (max-width: 600px) {
+    .forest {
+        height: 20vh;
+        width: auto;
+    }
+    .star1 {
+        top: calc(95px + 150px);
+    }
+    .star2 {
+        top: calc(80px + 150px);
+    }
+    .star3 {
+        top: calc(100px + 150px);
+    }
+    .star4 {
+        top: calc(130px + 150px);
+    }
+    .star5 {
+        top: calc(142px + 150px);
+    }
+    .star6 {
+        top: calc(186px + 150px);
+    }
+    .star7 {
+        top: calc(183px + 150px);
+    }
+    .star8 {
+        top: calc(200px + 150px);
+    }
+    .star9 {
+        top: calc(155px + 150px);
+    }
+    .line12 {
+        top: calc(95px + 150px);
+    }
+    .line23 {
+        top: calc(80px + 150px);
+    }
+    .line34 {
+        top: calc(100px + 150px);
+    }
+    .line45 {
+        top: calc(130px + 150px);
+    }
+    .line56 {
+        top: calc(142px + 150px);
+    }
+    .line67 {
+        top: calc(186px + 150px);
+    }
+    .line78 {
+        top: calc(185px + 150px);
+    }
+    .line89 {
+        top: calc(200px + 150px);
+    }
+    .line94 {
+        top: calc(155px + 150px);
+    }
+
+    .star10 {
+        left: calc(750px - 500px - 60px);
+        top: calc(150px + 330px);
+    }
+    .star11 {
+        left: calc(720px - 500px - 60px);
+        top: calc(180px + 330px);
+    }
+    .star12 {
+        left: calc(727px - 500px - 60px);
+        top: calc(220px + 330px);
+    }
+    .star13 {
+        left: calc(770px - 500px - 60px);
+        top: calc(170px + 330px);
+    }
+    .star14 {
+        left: calc(690px - 500px - 60px);
+        top: calc(260px + 330px);
+    }
+    .star15 {
+        left: calc(670px - 500px - 60px);
+        top: calc(240px + 330px);
+    }
+    .line1011 {
+        left: calc(750px - 500px - 60px);
+        top: calc(150px + 330px);
+    }
+    .line1112 {
+        left: calc(720px - 500px - 60px);
+        top: calc(180px + 330px);
+    }
+    .line1213 {
+        left: calc(727px - 500px - 60px);
+        top: calc(225px + 330px);
+    }
+    .line1214 {
+        left: calc(730px - 500px - 60px);
+        top: calc(220px + 330px);
+    }
+    .line1415 {
+        left: calc(690px - 500px - 60px);
+        top: calc(260px + 330px);
+    }
+}
+
+@keyframes glitter {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.shooting-star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: shooting-star-move 3s linear;
+}
+
+@keyframes shooting-star-move {
+    from {
+        left: -10px;
+        top: -10px;
+        transform: scale(0);
+    }
+    to {
+        left: calc(100vw + 10px);
+        top: calc(100vh + 10px);
+        transform: scale(1);
+    }
+}
